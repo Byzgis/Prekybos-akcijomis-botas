@@ -11,14 +11,16 @@ public class NujasMainas {
 
         DuomenuTiekejas duomenys = new TestiniaiDuomenys(); //baigta
         ValiutuPoros vp = duomenys.loadValiutuPoros("");
-        
-       
-        
+
         Nuokrypis n = new Nuokrypis();
         double nuokrypis = n.nuokrypis(vp);
-        
-       
-        System.out.println(nuokrypis);
-        
+        if (nuokrypis >= 0.04) {
+            System.out.println("Parduoti");
+        }
+
+        if (nuokrypis <= -0.04) {
+            System.out.println("Pirkti");
+        }
+
     }
 }
