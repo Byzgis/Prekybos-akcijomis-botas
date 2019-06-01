@@ -1,13 +1,31 @@
-
 package prekybos.botas.modelis;
 
 import java.time.LocalDateTime;
 
 public class MomentineKaina {
+
     private double kaina;
     private LocalDateTime laikas;
     private double bid;
     private double ask;
+
+    public MomentineKaina(double kaina, double bid, double ask, double hi, double low, LocalDateTime laikas) {
+        this.kaina = kaina;
+        this.laikas = laikas;
+        this.bid = bid;
+        this.ask = ask;
+        this.hi = hi;
+        this.low = low;
+    }
+
+    public MomentineKaina(double kaina, double bid, double ask, double hi, double low) {
+        this.kaina = kaina;
+        this.laikas = LocalDateTime.now();
+        this.bid = bid;
+        this.ask = ask;
+        this.hi = hi;
+        this.low = low;
+    }
 
     public double getKaina() {
         return kaina;
