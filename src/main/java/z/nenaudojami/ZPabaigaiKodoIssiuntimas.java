@@ -1,5 +1,5 @@
-package z.nenaudojami;
-
-public class ZPabaigaiKodoIssiuntimas {
-
-}
+//package z.nenaudojami;
+//
+//public class ZPabaigaiKodoIssiuntimas {
+//
+//}
