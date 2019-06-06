@@ -19,5 +19,7 @@ public class Nuokrypis {
             suma = suma +  vp.getKainosIstorija().get(i).getKaina();
         }
         return suma / vp.getKainosIstorija().size();
+       
     }
+     
 }
