@@ -7,7 +7,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import prekybos.botas.Nuokrypis;
+import prekybos.botas.Vidurkis;
 import prekybos.botas.modelis.MomentineKaina;
 import prekybos.botas.modelis.ValiutuPoros;
 
@@ -33,7 +33,7 @@ public class IsvedimasTest {
 
     @Test                                  //patikrina ar teisingai, apkaiciuoja vidurki
     public void nuokrypis() {
-        Nuokrypis n = new Nuokrypis();
+        Vidurkis n = new Vidurkis();
         double result = n.nuokrypis(vp);
         Assert.assertTrue(Math.abs(1.36 - result) > 0.001);
 

@@ -4,7 +4,7 @@ import prekybos.botas.modelis.ValiutuPoros;
 
 
 
-public class Nuokrypis {
+public class Vidurkis {
 
     public double nuokrypis(ValiutuPoros vp) {   //skirtumas tarp kainos ir vidurkio
        
